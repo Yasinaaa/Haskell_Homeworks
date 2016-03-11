@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2016-03-11 03:54:27.47429 UTC
+2016-03-11 07:50:26.639326 UTC
 
 interface homew_HJMcIzX2EUv6SSsk04grWt:Lib 7103
-  interface hash: 89fd77bc46eb6530308ddf5ca2b5e5a1
-  ABI hash: be5a546b0fd3a50dfecf2a5a2c20c3b2
+  interface hash: fb3cfb0a0e184e13d865215fe8d0af65
+  ABI hash: 0b31e46ed11a866b5a9e06d412e497f6
   export-list hash: 155922c1ac00b872ee8d9044668bf0db
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: a729319f406451ebd33a50da2b420fc1
@@ -27,22 +27,19 @@ family instance modules: base-4.8.2.0:Control.Applicative
 import  -/  base-4.8.2.0:GHC.Base bf56e93e483b6a281ad97fedb63bfd04
 import  -/  base-4.8.2.0:GHC.Num 099c29dfc2c0e3c154d011e91b663293
 import  -/  base-4.8.2.0:GHC.Real da292570a9ba3b498203d266364d0cfe
-import  -/  base-4.8.2.0:GHC.Show 81f797f6fb519cae2341362c0c4308de
 import  -/  base-4.8.2.0:Prelude 0f9dd1bcfa413fa55bb6dca444292bf6
-import  -/  base-4.8.2.0:System.IO ddde535dfa6326b813d98489c5399679
 import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
-import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
 import  -/  integer-gmp-1.0.0.0:GHC.Integer.Type 85cf1b8b2d409827fbcd445bcd31da6b
-c25e1c377a0cee61f5a79ff3a3ba57bb
+a18945181784bc52e906159948078d1f
   $whw1_2 :: GHC.Integer.Type.Integer -> GHC.Prim.Double#
   {- Arity: 1, Strictness: <S,U>, Inline: [0],
      Unfolding: (\ w :: GHC.Integer.Type.Integer ->
-                 case GHC.Integer.Type.leInteger# w Lib.fact5 of wild { DEFAULT ->
+                 case GHC.Integer.Type.leInteger# w Lib.hw1_6 of wild { DEFAULT ->
                  case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild of wild1 {
                    GHC.Types.False
                    -> case GHC.Integer.Type.gtInteger#
                              w
-                             Lib.fact5 of wild2 { DEFAULT ->
+                             Lib.hw1_6 of wild2 { DEFAULT ->
                       case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild2 of wild3 {
                         GHC.Types.False -> case Lib.hw1_5 ret_ty GHC.Prim.Double# of {}
                         GHC.Types.True -> Lib.$whw1_2' w 0.0 } }
@@ -52,37 +49,9 @@ d942bbe91952635aa6c85d51559737c3
   $whw1_2' ::
     GHC.Integer.Type.Integer -> GHC.Prim.Double# -> GHC.Prim.Double#
   {- Arity: 2, Strictness: <S,U><L,U>, Inline: [0] -}
-202948e434b739407e144c491dbfffa0
-  fact1 :: GHC.Integer.Type.Integer
-  {- Strictness: b -}
-70d2d92ff08b5dc87385971e399497d7
+4dde8cd463b644fefd51ba9bee70d1b6
   fact2 :: GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer
-  {- Arity: 1, Strictness: <S,U>,
-     Unfolding: (\ n :: GHC.Integer.Type.Integer ->
-                 case GHC.Integer.Type.ltInteger# n Lib.fact5 of wild { DEFAULT ->
-                 case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild of wild1 {
-                   GHC.Types.False
-                   -> case GHC.Integer.Type.geInteger#
-                             n
-                             Lib.fact5 of wild2 { DEFAULT ->
-                      case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild2 of wild3 {
-                        GHC.Types.False -> Lib.fact4
-                        GHC.Types.True -> Lib.fact2' n Lib.fact3 } }
-                   GHC.Types.True -> Lib.fact1 } }) -}
-73201019351a378a4581202e181ad29a
-  fact2' ::
-    GHC.Integer.Type.Integer
-    -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer
-  {- Arity: 2, Strictness: <S,U><L,U> -}
-184f5fc3bf466c26b96550f0c30f3b26
-  fact3 :: GHC.Integer.Type.Integer
-  {- HasNoCafRefs, Unfolding: (__integer 1) -}
-364e359d59efdc8520e38e27f0cda337
-  fact4 :: GHC.Integer.Type.Integer
-  {- Strictness: b -}
-3a0f8aae611d4d7730938ccaac53c750
-  fact5 :: GHC.Integer.Type.Integer
-  {- HasNoCafRefs, Unfolding: (__integer 0) -}
+  {- Arity: 1, Strictness: <S,U> -}
 a1a1806a2ac99168969837e13796892d
   hw1_1 ::
     GHC.Integer.Type.Integer
@@ -90,7 +59,7 @@ a1a1806a2ac99168969837e13796892d
   {- Arity: 2, Strictness: <S,1*U><S,U>,
      Unfolding: InlineRule (0, True, True)
                 GHC.Integer.Type.plusInteger -}
-b3efa657beb33242ef5e95d1be642f98
+3684bc79e7fa932606db9238f57adfe8
   hw1_2 :: GHC.Integer.Type.Integer -> GHC.Types.Double
   {- Arity: 1, Strictness: <S,U>m, Inline: INLINE[0],
      Unfolding: InlineRule (1, True, False)
@@ -102,16 +71,19 @@ c02e11c0ea7034b8c587d4edf5e539ad
 650786b0f04c73b9e02cf129a7d5bd8a
   hw1_5 :: GHC.Types.Double
   {- Strictness: b -}
-0e1fdfe1631cf9025ea3835b1078e9aa
+9049ea9774a1c1aeeaef2c6a11cf1bdc
+  hw1_6 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 0) -}
+a40a241e9b71d98efd398f1de26cc0e4
   isPrime :: GHC.Integer.Type.Integer -> GHC.Types.Bool
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: (\ n :: GHC.Integer.Type.Integer ->
-                 case GHC.Integer.Type.leInteger# n Lib.fact5 of wild { DEFAULT ->
+                 case GHC.Integer.Type.leInteger# n Lib.hw1_6 of wild { DEFAULT ->
                  case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild of wild1 {
                    GHC.Types.False
                    -> case GHC.Integer.Type.gtInteger#
                              n
-                             Lib.fact5 of wild2 { DEFAULT ->
+                             Lib.hw1_6 of wild2 { DEFAULT ->
                       case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild2 of wild3 {
                         GHC.Types.False -> Lib.isPrime3
                         GHC.Types.True -> Lib.isPrime' n Lib.isPrime2 } }

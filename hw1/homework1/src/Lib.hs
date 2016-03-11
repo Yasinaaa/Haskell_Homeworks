@@ -40,13 +40,10 @@ hw1_2' n res
 -- n!! = 1*3*5*...*n, если n - нечетное
 -- n!! = 2*4*6*...*n, если n - четное
 fact2 :: Integer -> Integer
-fact2' :: Integer -> Integer -> Integer
-fact2 n  
-	| n < 0 = error "fact2: non-positive argument"
-	| n >= 0 = fact2' n 1
-fact2' n res
-	| n <= 1 = res
-	| n > 1 = fact2' (n - 2) (res * n)  
+fact2 n = 
+	if n>0
+	      then n * fact2 (n-2)
+	      else 1  
 
 -- |Проверить заданное число на простоту
 -- Использовать div для целочисленного деления
@@ -71,17 +68,3 @@ primeSum a b
 primeSum' [] = 0
 primeSum' (x:lt) = if isPrime x then x + primeSum' lt else primeSum' lt
 
-main :: IO ()
-main = do
-	putStrLn $ show $ hw1_1 5 6
-
-	putStrLn $ show $ hw1_2 3
-
-	putStrLn $ show $ fact2 6
-	putStrLn $ show $ fact2 7
-
-	putStrLn $ show $ isPrime 17
-	putStrLn $ show $ isPrime 18
-
-	putStrLn $ show $ [8..15]
-	putStrLn $ show $ primeSum 8 15

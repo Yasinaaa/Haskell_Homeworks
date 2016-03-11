@@ -4,15 +4,21 @@ import Lib
 
 main :: IO ()
 main = do
-	putStrLn $ show $ hw1_1 5 6
+	let res = hw1_1 1 2
+    	putStrLn $ "task 1" ++ " 1+2 = " ++ show res
 
-	putStrLn $ show $ hw1_2 3
+	let res = hw1_2 3
+	putStrLn $ "task 2 "++ show res
 
-	putStrLn $ show $ fact2 6
-	putStrLn $ show $ fact2 7
+	let res = fact2 3
+	putStrLn $ "task 3 "++ show res
+	let res = fact2 4
+	putStrLn $ "task 3.2 "++ show res 
 
-	putStrLn $ show $ isPrime 17
-	putStrLn $ show $ isPrime 18
+	let res = isPrime 17
+	putStrLn $ "task 4 "++ show res
 
-	putStrLn $ show $ [8..15]
-	putStrLn $ show $ primeSum 8 15
+	let res = [8..15]
+	putStrLn $ "task 5 "++ show res
+	let res = primeSum 8 15
+	putStrLn $ "task 5 "++ show res

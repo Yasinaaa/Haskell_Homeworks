@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2016-03-11 03:54:28.37624 UTC
+2016-03-11 07:53:30.616052 UTC
 
 interface main@main:Main 7103
-  interface hash: 1b2cc9261189bcd2a10aef61532dd55f
-  ABI hash: 24bc3e56af175eaca7c0d6019e53a03e
+  interface hash: 75e99630c0b02de703e906b7ad6f49cd
+  ABI hash: 98cba2fbbf322ba640d45964a6882970
   export-list hash: 6fa2fb30061d772403c91f988b31801a
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: c0beb5e06f8976555a226dd217f522c3
@@ -20,17 +20,18 @@ orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
 family instance modules: base-4.8.2.0:Control.Applicative
                          base-4.8.2.0:Data.Either base-4.8.2.0:Data.Monoid
                          base-4.8.2.0:Data.Type.Equality base-4.8.2.0:GHC.Generics
+import  -/  base-4.8.2.0:GHC.Base bf56e93e483b6a281ad97fedb63bfd04
 import  -/  base-4.8.2.0:GHC.Show 81f797f6fb519cae2341362c0c4308de
 import  -/  base-4.8.2.0:Prelude 0f9dd1bcfa413fa55bb6dca444292bf6
 import  -/  base-4.8.2.0:System.IO ddde535dfa6326b813d98489c5399679
 import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
-import  -/  homework1-0.1.0.0@homew_HJMcIzX2EUv6SSsk04grWt:Lib be5a546b0fd3a50dfecf2a5a2c20c3b2
-d727f12b511b8a08df74bf0012419c63
+import  -/  homework1-0.1.0.0@homew_HJMcIzX2EUv6SSsk04grWt:Lib 0b31e46ed11a866b5a9e06d412e497f6
+3dc46b590e2b52d6b77d7af00ab4bcd0
   main :: GHC.Types.IO ()
   {- Arity: 1, Strictness: <L,U>,
      Unfolding: InlineRule (0, True, True)
                 Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
-8b6da40860102add5203b594fee7eb03
+8a558f46f334a5ed9e8b7ddff2a924b0
   main1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
@@ -38,22 +39,22 @@ d727f12b511b8a08df74bf0012419c63
      Unfolding: (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
                  case GHC.IO.Handle.Text.hPutStr2
                         GHC.IO.Handle.FD.stdout
-                        Main.main21
+                        Main.main24
                         GHC.Types.True
                         s of ds1 { (#,#) ipv ipv1 ->
                  case GHC.IO.Handle.Text.hPutStr2
                         GHC.IO.Handle.FD.stdout
-                        Main.main19
+                        Main.main22
                         GHC.Types.True
                         ipv of ds2 { (#,#) ipv2 ipv3 ->
                  case GHC.IO.Handle.Text.hPutStr2
                         GHC.IO.Handle.FD.stdout
-                        Main.main16
+                        Main.main18
                         GHC.Types.True
                         ipv2 of ds3 { (#,#) ipv4 ipv5 ->
                  case GHC.IO.Handle.Text.hPutStr2
                         GHC.IO.Handle.FD.stdout
-                        Main.main13
+                        Main.main14
                         GHC.Types.True
                         ipv4 of ds4 { (#,#) ipv6 ipv7 ->
                  case GHC.IO.Handle.Text.hPutStr2
@@ -63,120 +64,141 @@ d727f12b511b8a08df74bf0012419c63
                         ipv6 of ds5 { (#,#) ipv8 ipv9 ->
                  case GHC.IO.Handle.Text.hPutStr2
                         GHC.IO.Handle.FD.stdout
-                        Main.main9
+                        Main.main7
                         GHC.Types.True
                         ipv8 of ds6 { (#,#) ipv10 ipv11 ->
-                 case GHC.IO.Handle.Text.hPutStr2
-                        GHC.IO.Handle.FD.stdout
-                        Main.main6
-                        GHC.Types.True
-                        ipv10 of ds7 { (#,#) ipv12 ipv13 ->
                  GHC.IO.Handle.Text.hPutStr2
                    GHC.IO.Handle.FD.stdout
                    Main.main2
                    GHC.Types.True
-                   ipv12 } } } } } } }) -}
-64e3d49a745fc21ef1de4d7ee566c6e2
+                   ipv10 } } } } } }) -}
+6ba9d43bdab84844242e218e09a64ecb
   main10 :: GHC.Integer.Type.Integer
-  {- HasNoCafRefs, Unfolding: (__integer 18) -}
-6974d528794f336af5a1d75c433cbe7f
-  main11 :: GHC.Base.String
-  {- Unfolding: (case Lib.isPrime Main.main12 of wild {
+  {- HasNoCafRefs, Unfolding: (__integer 1) -}
+a610e4af8a8f8608cc7c2367c5427222
+  main11 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "task 4 "#
+                   Main.main12) -}
+999ab10d7a82becf181c85d06fdbe515
+  main12 :: [GHC.Types.Char]
+  {- Unfolding: (case Lib.isPrime Main.main13 of wild {
                    GHC.Types.False -> GHC.Show.shows17
                    GHC.Types.True -> GHC.Show.shows16 }) -}
-b3d5547341501c10e7696f4c6a61c577
-  main12 :: GHC.Integer.Type.Integer
+24817c51cb50fad82bbff672d3e670c5
+  main13 :: GHC.Integer.Type.Integer
   {- HasNoCafRefs, Unfolding: (__integer 17) -}
-2915d79034cbadb6b318b50686dff212
-  main13 :: GHC.Base.String
+450ac44cb74242da87b0bdefa5f36575
+  main14 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "task 3.2 "#
+                   Main.main15) -}
+977baad32f290244c492a221888258c4
+  main15 :: [GHC.Types.Char]
   {- Unfolding: (case GHC.Show.$w$cshowsPrec1
                         0
-                        Main.main14
+                        Main.main16
                         (GHC.Types.[] @ GHC.Types.Char) of ww2 { (#,#) ww3 ww4 ->
                  GHC.Types.: @ GHC.Types.Char ww3 ww4 }) -}
-459f8cd7ea36b6c2b75564b6517e2064
-  main14 :: GHC.Integer.Type.Integer
-  {- Unfolding: (Lib.fact2 Main.main15) -}
-3e7a3d9816bb424de889be37814a856f
-  main15 :: GHC.Integer.Type.Integer
-  {- HasNoCafRefs, Unfolding: (__integer 7) -}
-6b8f257d8b72c31eabef1900902c4c10
-  main16 :: GHC.Base.String
-  {- Unfolding: (case GHC.Show.$w$cshowsPrec1
-                        0
-                        Main.main17
-                        (GHC.Types.[] @ GHC.Types.Char) of ww2 { (#,#) ww3 ww4 ->
-                 GHC.Types.: @ GHC.Types.Char ww3 ww4 }) -}
-43ba5b009429e5c80a1635ec15152b51
+5a4f2f8b25540272a599217ce053e674
+  main16 :: GHC.Integer.Type.Integer
+  {- Unfolding: (Lib.fact2 Main.main17) -}
+67cc6303a9d5ee3689ec6f2ce405d685
   main17 :: GHC.Integer.Type.Integer
-  {- Unfolding: (Lib.fact2 Main.main18) -}
-87c5d88df2695bd271cb9f5fce705e08
-  main18 :: GHC.Integer.Type.Integer
-  {- HasNoCafRefs, Unfolding: (__integer 6) -}
-e8853d10005ede1f7c626d30984e4129
-  main19 :: GHC.Base.String
-  {- Unfolding: (case Lib.$whw1_2 Main.main20 of ww { DEFAULT ->
+  {- HasNoCafRefs, Unfolding: (__integer 4) -}
+5cfa5a445fb85e1ec7727ff03c00b0d8
+  main18 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "task 3 "#
+                   Main.main19) -}
+b798b66f1015814739a6c6c770083b6b
+  main19 :: [GHC.Types.Char]
+  {- Unfolding: (case GHC.Show.$w$cshowsPrec1
+                        0
+                        Main.main20
+                        (GHC.Types.[] @ GHC.Types.Char) of ww2 { (#,#) ww3 ww4 ->
+                 GHC.Types.: @ GHC.Types.Char ww3 ww4 }) -}
+b21d7a30af099b68e61bfafacbe6bac2
+  main2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "task 5 "#
+                   Main.main3) -}
+2e54a7b723479d98144dfd46446c91e9
+  main20 :: GHC.Integer.Type.Integer
+  {- Unfolding: (Lib.fact2 Main.main21) -}
+0d7219c92a7adc70a83fe385eafa8073
+  main21 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 3) -}
+0fc82a740e5e4e20573ba98bdc158345
+  main22 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "task 2 "#
+                   Main.main23) -}
+a68c8d3f821577c1759ed5120a916058
+  main23 :: [GHC.Types.Char]
+  {- Unfolding: (case Lib.$whw1_2 Main.main21 of ww { DEFAULT ->
                  GHC.Float.$w$sshowSignedFloat
                    GHC.Float.$fShowDouble_$sshowFloat
                    GHC.Show.shows18
                    ww
                    (GHC.Types.[] @ GHC.Types.Char) }) -}
-372de4c68d4b34a4e864c2ac7779dc5a
-  main2 :: GHC.Base.String
+520335b300cd1338b8e5936896bc562c
+  main24 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "task 1"#
+                   Main.main25) -}
+ba9995fe65be72afdfbab8b8c75ef8d6
+  main25 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   " 1+2 = "#
+                   Main.main26) -}
+0bec0f5f8bd2d3493a375a7de059ac26
+  main26 :: [GHC.Types.Char]
   {- Unfolding: (case GHC.Show.$w$cshowsPrec1
                         0
-                        Main.main3
+                        Main.main21
                         (GHC.Types.[] @ GHC.Types.Char) of ww2 { (#,#) ww3 ww4 ->
                  GHC.Types.: @ GHC.Types.Char ww3 ww4 }) -}
-085537154b8d3df45352318e850ae6b8
-  main20 :: GHC.Integer.Type.Integer
-  {- HasNoCafRefs, Unfolding: (__integer 3) -}
-87ba578dd800771a636f220424a2f9a0
-  main21 :: GHC.Base.String
-  {- Unfolding: (case GHC.Show.$w$cshowsPrec1
-                        0
-                        Main.main22
-                        (GHC.Types.[] @ GHC.Types.Char) of ww2 { (#,#) ww3 ww4 ->
-                 GHC.Types.: @ GHC.Types.Char ww3 ww4 }) -}
-04b11c38a3209c103cb33f4e8cd7bfeb
-  main22 :: GHC.Integer.Type.Integer
-  {- HasNoCafRefs, Unfolding: (__integer 11) -}
-ba4007bde7b29a6e64c88eb1bcf41e85
-  main23 ::
+f70c78c6dd5522a3b33ee7be4daf0e3f
+  main27 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
   {- Arity: 1,
      Unfolding: (GHC.TopHandler.runMainIO1
                    @ ()
                    Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R))) -}
-10fec4763a4575faabec21eac6985c15
-  main3 :: GHC.Integer.Type.Integer
-  {- Unfolding: (Lib.primeSum Main.main5 Main.main4) -}
-2e9b80e8a06b11e9f78a2c576ee1d342
+4b54f9db65a9cb21dfb1a75d49486d51
+  main3 :: [GHC.Types.Char]
+  {- Unfolding: (case GHC.Show.$w$cshowsPrec1
+                        0
+                        Main.main4
+                        (GHC.Types.[] @ GHC.Types.Char) of ww2 { (#,#) ww3 ww4 ->
+                 GHC.Types.: @ GHC.Types.Char ww3 ww4 }) -}
+6f961e653d8cdaa567d1005eb1acc6b3
   main4 :: GHC.Integer.Type.Integer
-  {- HasNoCafRefs, Unfolding: (__integer 15) -}
-28f49ddf1fcea02a789e5deca172112a
+  {- Unfolding: (Lib.primeSum Main.main6 Main.main5) -}
+cf1730b792e4c1fd33d4dd79be1012bf
   main5 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 15) -}
+a99c89035d471a5c8ccf13bbe5026e9e
+  main6 :: GHC.Integer.Type.Integer
   {- HasNoCafRefs, Unfolding: (__integer 8) -}
-5b27eebe090c4366c4d281c916151e48
-  main6 :: GHC.Base.String
+cbf8539c29ac0cdd78d7c58d55d58915
+  main7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "task 5 "#
+                   Main.main8) -}
+b6eb4845417e03ea2f8333d777805b73
+  main8 :: GHC.Base.String
   {- Unfolding: (GHC.Show.$fShowInteger_$cshowList
-                   Main.main7
+                   Main.main9
                    (GHC.Types.[] @ GHC.Types.Char)) -}
-282841b78e80e5b3f297e3ba459eeb99
-  main7 :: [GHC.Integer.Type.Integer]
+511e63d7bb4aecafa051e2b5890a161c
+  main9 :: [GHC.Integer.Type.Integer]
   {- Unfolding: (GHC.Enum.enumDeltaToInteger
-                   Main.main5
-                   Main.main8
-                   Main.main4) -}
-781e85892741f2775618c5ffa067f8a6
-  main8 :: GHC.Integer.Type.Integer
-  {- HasNoCafRefs, Unfolding: (__integer 1) -}
-63781696504e06cca58cfcbce0b692b6
-  main9 :: GHC.Base.String
-  {- Unfolding: (case Lib.isPrime Main.main10 of wild {
-                   GHC.Types.False -> GHC.Show.shows17
-                   GHC.Types.True -> GHC.Show.shows16 }) -}
+                   Main.main6
+                   Main.main10
+                   Main.main5) -}
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:
