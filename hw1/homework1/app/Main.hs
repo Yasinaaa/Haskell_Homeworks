@@ -1,9 +1,15 @@
 module Main where
 
 import Lib
+import Text.Printf
+
+line n = printf "%d, " $ fibs !! n
 
 main :: IO ()
 main = do
+	sequence_ $ map line [1..16]
+        putStrLn "..."
+
 	let res = hw1_1 1 2
     	putStrLn $ "task 1" ++ " 1+2 = " ++ show res
 

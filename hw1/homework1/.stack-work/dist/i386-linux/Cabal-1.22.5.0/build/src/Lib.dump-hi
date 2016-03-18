@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2016-03-11 07:50:26.639326 UTC
+2016-03-18 08:23:49.1037 UTC
 
 interface homew_HJMcIzX2EUv6SSsk04grWt:Lib 7103
-  interface hash: fb3cfb0a0e184e13d865215fe8d0af65
-  ABI hash: 0b31e46ed11a866b5a9e06d412e497f6
-  export-list hash: 155922c1ac00b872ee8d9044668bf0db
+  interface hash: 85cd1ccd47883691a1480723fd0fe87c
+  ABI hash: 346958538759aa3ec82bb360c954ec0a
+  export-list hash: 877f4c0015e8bdd309d23213f6bbd094
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: a729319f406451ebd33a50da2b420fc1
   sig of: Nothing
@@ -13,6 +13,7 @@ interface homew_HJMcIzX2EUv6SSsk04grWt:Lib 7103
   where
 exports:
   Lib.fact2
+  Lib.fibs
   Lib.hw1_1
   Lib.hw1_2
   Lib.isPrime
@@ -25,6 +26,7 @@ family instance modules: base-4.8.2.0:Control.Applicative
                          base-4.8.2.0:Data.Either base-4.8.2.0:Data.Monoid
                          base-4.8.2.0:Data.Type.Equality base-4.8.2.0:GHC.Generics
 import  -/  base-4.8.2.0:GHC.Base bf56e93e483b6a281ad97fedb63bfd04
+import  -/  base-4.8.2.0:GHC.List ab53ad3f819f64915f1f91641b6e3255
 import  -/  base-4.8.2.0:GHC.Num 099c29dfc2c0e3c154d011e91b663293
 import  -/  base-4.8.2.0:GHC.Real da292570a9ba3b498203d266364d0cfe
 import  -/  base-4.8.2.0:Prelude 0f9dd1bcfa413fa55bb6dca444292bf6
@@ -52,6 +54,22 @@ d942bbe91952635aa6c85d51559737c3
 4dde8cd463b644fefd51ba9bee70d1b6
   fact2 :: GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer
   {- Arity: 1, Strictness: <S,U> -}
+e734515cdf18b84cc0a7a82665f87dbc
+  fibs :: [GHC.Types.Int]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.: @ GHC.Types.Int Lib.fibs4 Lib.fibs1) -}
+f51855d33149537a9cb081cdc5564238
+  fibs1 :: [GHC.Types.Int]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.: @ GHC.Types.Int Lib.fibs3 Lib.fibs2) -}
+830c5a4d7782e75608dae399e4b02e70
+  fibs2 :: [GHC.Types.Int]
+7a23040e4b6d97acd7276bf87310e60d
+  fibs3 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 1) -}
+ff2acf8df526bd2d41935552cd7ed354
+  fibs4 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0) -}
 a1a1806a2ac99168969837e13796892d
   hw1_1 ::
     GHC.Integer.Type.Integer

@@ -1,17 +1,18 @@
 
 ==================== FINAL INTERFACE ====================
-2016-03-11 07:53:30.616052 UTC
+2016-03-18 08:25:47.278769 UTC
 
 interface main@main:Main 7103
-  interface hash: 75e99630c0b02de703e906b7ad6f49cd
-  ABI hash: 98cba2fbbf322ba640d45964a6882970
-  export-list hash: 6fa2fb30061d772403c91f988b31801a
+  interface hash: 4f28b47b85cd9920427c48b0fc10ff64
+  ABI hash: 5e46138c0eff3c877b7ad01e14f9752c
+  export-list hash: bcdd49c58664937d23136acc3454b7b8
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: c0beb5e06f8976555a226dd217f522c3
   sig of: Nothing
   used TH splices: False
   where
 exports:
+  Main.line
   Main.main
 module dependencies:
 package dependencies: base-4.8.2.0* ghc-prim-0.4.0.0
@@ -20,58 +21,121 @@ orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
 family instance modules: base-4.8.2.0:Control.Applicative
                          base-4.8.2.0:Data.Either base-4.8.2.0:Data.Monoid
                          base-4.8.2.0:Data.Type.Equality base-4.8.2.0:GHC.Generics
+import  -/  base-4.8.2.0:Data.Foldable 37c1dcdf6448d7800d277e5be0c3fc6f
 import  -/  base-4.8.2.0:GHC.Base bf56e93e483b6a281ad97fedb63bfd04
+import  -/  base-4.8.2.0:GHC.List ab53ad3f819f64915f1f91641b6e3255
 import  -/  base-4.8.2.0:GHC.Show 81f797f6fb519cae2341362c0c4308de
 import  -/  base-4.8.2.0:Prelude 0f9dd1bcfa413fa55bb6dca444292bf6
 import  -/  base-4.8.2.0:System.IO ddde535dfa6326b813d98489c5399679
+import  -/  base-4.8.2.0:Text.Printf 4fa09b2e91675fa0d6c2c943551f710f
 import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
-import  -/  homework1-0.1.0.0@homew_HJMcIzX2EUv6SSsk04grWt:Lib 0b31e46ed11a866b5a9e06d412e497f6
-3dc46b590e2b52d6b77d7af00ab4bcd0
+import  -/  homework1-0.1.0.0@homew_HJMcIzX2EUv6SSsk04grWt:Lib 346958538759aa3ec82bb360c954ec0a
+e80f25ac2c762af6251ca63a30752cff
+  $sprintf2 :: () ~ ()
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq# @ * @ () @ () @~ <()>_N) -}
+8da8d9bc59d2c9418387e86c6cb0923e
+  line :: Text.Printf.PrintfType t => GHC.Types.Int -> t
+  {- Arity: 2, Strictness: <C(C(S)),1*C1(C1(U))><L,1*U(U)>,
+     Unfolding: (\ @ t
+                   $dPrintfType :: Text.Printf.PrintfType t
+                   eta :: GHC.Types.Int ->
+                 $dPrintfType `cast` (Text.Printf.NTCo:PrintfType[0] <t>_N)
+                   Main.line_fmts
+                   (GHC.Types.:
+                      @ Text.Printf.UPrintf
+                      (Text.Printf.$w$sparseIntFormat,
+                       let {
+                         w :: GHC.Types.Int
+                         = case eta of ww { GHC.Types.I# ww1 ->
+                           GHC.List.$w!! @ GHC.Types.Int Lib.fibs ww1 }
+                       } in
+                       \ w1 :: Text.Printf.FieldFormat ->
+                       case w1 of ww { Text.Printf.FieldFormat ww1 ww2 ww3 ww4 ww5 ww6 ww7 ->
+                       case ww7 of ww8 { GHC.Types.C# ww9 ->
+                       Text.Printf.$w$sformatInt w ww1 ww2 ww3 ww4 ww5 ww6 ww9 } })
+                      (GHC.Types.[] @ Text.Printf.UPrintf))) -}
+1e624375a9a7ad5e19937392b1469815
+  line1 ::
+    GHC.Types.Int
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <L,1*U(U)><L,U>,
+     Unfolding: (\ eta :: GHC.Types.Int
+                   eta1 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 Text.Printf.$wa
+                   @ ()
+                   Main.$sprintf2
+                   Main.line_fmts
+                   (GHC.Types.:
+                      @ Text.Printf.UPrintf
+                      (Text.Printf.$w$sparseIntFormat,
+                       let {
+                         w :: GHC.Types.Int
+                         = case eta of ww { GHC.Types.I# ww1 ->
+                           GHC.List.$w!! @ GHC.Types.Int Lib.fibs ww1 }
+                       } in
+                       \ w1 :: Text.Printf.FieldFormat ->
+                       case w1 of ww { Text.Printf.FieldFormat ww1 ww2 ww3 ww4 ww5 ww6 ww7 ->
+                       case ww7 of ww8 { GHC.Types.C# ww9 ->
+                       Text.Printf.$w$sformatInt w ww1 ww2 ww3 ww4 ww5 ww6 ww9 } })
+                      (GHC.Types.[] @ Text.Printf.UPrintf))
+                   eta1) -}
+f908fc16e0120c531d40fc4204302b14
+  line_fmts :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString# "%d, "#) -}
+f9e6048c9de213967f909588e174fa53
   main :: GHC.Types.IO ()
   {- Arity: 1, Strictness: <L,U>,
      Unfolding: InlineRule (0, True, True)
                 Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
-8a558f46f334a5ed9e8b7ddff2a924b0
+ec468a9f021a1c0c88ec402831cd8597
   main1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
   {- Arity: 1, Strictness: <L,U>,
      Unfolding: (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case Main.main28 1 s of ds1 { (#,#) ipv ipv1 ->
                  case GHC.IO.Handle.Text.hPutStr2
                         GHC.IO.Handle.FD.stdout
-                        Main.main24
-                        GHC.Types.True
-                        s of ds1 { (#,#) ipv ipv1 ->
-                 case GHC.IO.Handle.Text.hPutStr2
-                        GHC.IO.Handle.FD.stdout
-                        Main.main22
+                        Main.main27
                         GHC.Types.True
                         ipv of ds2 { (#,#) ipv2 ipv3 ->
                  case GHC.IO.Handle.Text.hPutStr2
                         GHC.IO.Handle.FD.stdout
-                        Main.main18
+                        Main.main24
                         GHC.Types.True
                         ipv2 of ds3 { (#,#) ipv4 ipv5 ->
                  case GHC.IO.Handle.Text.hPutStr2
                         GHC.IO.Handle.FD.stdout
-                        Main.main14
+                        Main.main22
                         GHC.Types.True
                         ipv4 of ds4 { (#,#) ipv6 ipv7 ->
                  case GHC.IO.Handle.Text.hPutStr2
                         GHC.IO.Handle.FD.stdout
-                        Main.main11
+                        Main.main18
                         GHC.Types.True
                         ipv6 of ds5 { (#,#) ipv8 ipv9 ->
                  case GHC.IO.Handle.Text.hPutStr2
                         GHC.IO.Handle.FD.stdout
-                        Main.main7
+                        Main.main14
                         GHC.Types.True
                         ipv8 of ds6 { (#,#) ipv10 ipv11 ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        Main.main11
+                        GHC.Types.True
+                        ipv10 of ds7 { (#,#) ipv12 ipv13 ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        Main.main7
+                        GHC.Types.True
+                        ipv12 of ds8 { (#,#) ipv14 ipv15 ->
                  GHC.IO.Handle.Text.hPutStr2
                    GHC.IO.Handle.FD.stdout
                    Main.main2
                    GHC.Types.True
-                   ipv10 } } } } } }) -}
+                   ipv14 } } } } } } } }) -}
 6ba9d43bdab84844242e218e09a64ecb
   main10 :: GHC.Integer.Type.Integer
   {- HasNoCafRefs, Unfolding: (__integer 1) -}
@@ -159,8 +223,17 @@ ba9995fe65be72afdfbab8b8c75ef8d6
                         Main.main21
                         (GHC.Types.[] @ GHC.Types.Char) of ww2 { (#,#) ww3 ww4 ->
                  GHC.Types.: @ GHC.Types.Char ww3 ww4 }) -}
-f70c78c6dd5522a3b33ee7be4daf0e3f
-  main27 ::
+8e92ace5ce13f01cb584f8d67c701ff1
+  main27 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "..."#) -}
+20688a13a1466d3fde5d26f63ee52fbb
+  main28 ::
+    GHC.Prim.Int#
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <L,U><L,U> -}
+e31ef95eabd56ef988a5860f2114d71e
+  main29 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
   {- Arity: 1,
