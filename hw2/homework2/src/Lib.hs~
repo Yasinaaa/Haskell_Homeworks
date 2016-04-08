@@ -22,10 +22,9 @@ list2_1 ls = minimum (map maximum [x | x <- ls])
 
 -- |Вычислить наибольший общий делитель(НОД) 2х натуральных чисел. Использовать алгоритм Евклида.
 gcd :: Integral a => a -> a -> a
-gcd a b
-	| a <= 0 || b < 0 = error "gcd: non-positive argument"
-	| b == 0 = a
-	| otherwise = gcd b (a `mod` b)
+gcd a b = gcd' (abs a) (abs b)
+    where gcd' a 0 = a
+          gcd' a b = gcd' b (a `rem` b)
 
 -- |Проверить являются ли 2 натуральных числа взаимнопростыми.
 -- 2 числа называются взаимнопростыми если их НОД равен 1

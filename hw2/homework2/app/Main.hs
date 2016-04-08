@@ -5,9 +5,21 @@ import Prelude hiding (gcd)
 
 main :: IO ()
 main = do
-	putStrLn $ show $ list2_1 [[1,2,3], [5,5,5], [-1,-1,-1,-1,-1]]
-	putStrLn $ show $ gcd 24 8
-	putStrLn $ show $ coPrime 15 4
-	putStrLn $ show $ gcfList [6, 7, 12]
-	putStrLn $ show $ perfect 1000
+	let res = list2_1 [[1,2,3], [4,5,5], [-1,6,3,7,8], [26,1,7,3,5]]
+	putStrLn $ "list2_1 [[1,2,3], [4,5,5], [-1,6,3,7,8], [26,1,7,3,5]] answer=" ++ show res
+
+	let res = gcd 42 6
+	putStrLn $ "gcd 42 6 answer=" ++ show res
+
+	let res = coPrime 17 3
+	putStrLn $ "coPrime 17 3 answer=" ++ show res
+
+	let res = coPrime 15 3
+	putStrLn $ "coPrime 15 3 answer=" ++ show res
+
+	let res = gcfList [3, 5, 4]
+	putStrLn $ "gcfList [3, 5, 4] answer=" ++ show res
+
+	let res = perfect 1000
+	putStrLn $ "perfect 1000 answer=" ++ show res
 
