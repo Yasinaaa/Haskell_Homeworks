@@ -1,11 +1,17 @@
 module Main where
 
 import Lib
+import Text.Printf
+
+line n = printf "%d, " $ fibs !! n
 
 main :: IO ()
 main = do
+	putStrLn $ "Fib: "
+	sequence_ $ map line [1..16]
+
 	let res = hw1_1 1 2
-    	putStrLn $ "task 1" ++ " 1+2 = " ++ show res
+    	putStrLn $ "\n task 1" ++ " 1+2 = " ++ show res
 
 	let res = hw1_2 3
 	putStrLn $ "task 2 "++ show res

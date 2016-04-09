@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2016-03-18 08:25:47.278769 UTC
+2016-04-09 09:59:46.063618 UTC
 
 interface main@main:Main 7103
-  interface hash: 4f28b47b85cd9920427c48b0fc10ff64
-  ABI hash: 5e46138c0eff3c877b7ad01e14f9752c
+  interface hash: e71306f3fcbcb4c7839c2365381f689e
+  ABI hash: cd91c0b1ef4f9e0538cb4b1c463bcd6c
   export-list hash: bcdd49c58664937d23136acc3454b7b8
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: c0beb5e06f8976555a226dd217f522c3
@@ -84,58 +84,63 @@ e80f25ac2c762af6251ca63a30752cff
 f908fc16e0120c531d40fc4204302b14
   line_fmts :: GHC.Base.String
   {- Unfolding: (GHC.CString.unpackCString# "%d, "#) -}
-f9e6048c9de213967f909588e174fa53
+d87ec9d0129b97fc69e04f33350c79ce
   main :: GHC.Types.IO ()
   {- Arity: 1, Strictness: <L,U>,
      Unfolding: InlineRule (0, True, True)
                 Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
-ec468a9f021a1c0c88ec402831cd8597
+38c71ad8e6eefcd9d66e49e43743157a
   main1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
   {- Arity: 1, Strictness: <L,U>,
      Unfolding: (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
-                 case Main.main28 1 s of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        Main.main29
+                        GHC.Types.True
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case Main.main28 1 ipv of ds2 { (#,#) ipv2 ipv3 ->
                  case GHC.IO.Handle.Text.hPutStr2
                         GHC.IO.Handle.FD.stdout
                         Main.main27
                         GHC.Types.True
-                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                        ipv2 of ds3 { (#,#) ipv4 ipv5 ->
                  case GHC.IO.Handle.Text.hPutStr2
                         GHC.IO.Handle.FD.stdout
                         Main.main24
                         GHC.Types.True
-                        ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                        ipv4 of ds4 { (#,#) ipv6 ipv7 ->
                  case GHC.IO.Handle.Text.hPutStr2
                         GHC.IO.Handle.FD.stdout
                         Main.main22
                         GHC.Types.True
-                        ipv4 of ds4 { (#,#) ipv6 ipv7 ->
+                        ipv6 of ds5 { (#,#) ipv8 ipv9 ->
                  case GHC.IO.Handle.Text.hPutStr2
                         GHC.IO.Handle.FD.stdout
                         Main.main18
                         GHC.Types.True
-                        ipv6 of ds5 { (#,#) ipv8 ipv9 ->
+                        ipv8 of ds6 { (#,#) ipv10 ipv11 ->
                  case GHC.IO.Handle.Text.hPutStr2
                         GHC.IO.Handle.FD.stdout
                         Main.main14
                         GHC.Types.True
-                        ipv8 of ds6 { (#,#) ipv10 ipv11 ->
+                        ipv10 of ds7 { (#,#) ipv12 ipv13 ->
                  case GHC.IO.Handle.Text.hPutStr2
                         GHC.IO.Handle.FD.stdout
                         Main.main11
                         GHC.Types.True
-                        ipv10 of ds7 { (#,#) ipv12 ipv13 ->
+                        ipv12 of ds8 { (#,#) ipv14 ipv15 ->
                  case GHC.IO.Handle.Text.hPutStr2
                         GHC.IO.Handle.FD.stdout
                         Main.main7
                         GHC.Types.True
-                        ipv12 of ds8 { (#,#) ipv14 ipv15 ->
+                        ipv14 of ds9 { (#,#) ipv16 ipv17 ->
                  GHC.IO.Handle.Text.hPutStr2
                    GHC.IO.Handle.FD.stdout
                    Main.main2
                    GHC.Types.True
-                   ipv14 } } } } } } } }) -}
+                   ipv16 } } } } } } } } }) -}
 6ba9d43bdab84844242e218e09a64ecb
   main10 :: GHC.Integer.Type.Integer
   {- HasNoCafRefs, Unfolding: (__integer 1) -}
@@ -232,14 +237,9 @@ ba9995fe65be72afdfbab8b8c75ef8d6
     -> GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
   {- Arity: 2, Strictness: <L,U><L,U> -}
-e31ef95eabd56ef988a5860f2114d71e
-  main29 ::
-    GHC.Prim.State# GHC.Prim.RealWorld
-    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
-  {- Arity: 1,
-     Unfolding: (GHC.TopHandler.runMainIO1
-                   @ ()
-                   Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R))) -}
+3d1b68f1cf8c62b1fd35eb300a7c98b7
+  main29 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Fib: "#) -}
 4b54f9db65a9cb21dfb1a75d49486d51
   main3 :: [GHC.Types.Char]
   {- Unfolding: (case GHC.Show.$w$cshowsPrec1
@@ -247,6 +247,14 @@ e31ef95eabd56ef988a5860f2114d71e
                         Main.main4
                         (GHC.Types.[] @ GHC.Types.Char) of ww2 { (#,#) ww3 ww4 ->
                  GHC.Types.: @ GHC.Types.Char ww3 ww4 }) -}
+c240f9138e43c42183e2285fe8cdb43d
+  main30 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1
+                   @ ()
+                   Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R))) -}
 6f961e653d8cdaa567d1005eb1acc6b3
   main4 :: GHC.Integer.Type.Integer
   {- Unfolding: (Lib.primeSum Main.main6 Main.main5) -}

@@ -7,6 +7,7 @@ line n = printf "%d, " $ fibs !! n
 
 main :: IO ()
 main = do
+	putStrLn $ "Fib: "
 	sequence_ $ map line [1..16]
         putStrLn "..."
 
