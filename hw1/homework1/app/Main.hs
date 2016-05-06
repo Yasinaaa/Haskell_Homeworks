@@ -1,5 +1,6 @@
 module Main where
 
+import HW1
 import Lib
 import Text.Printf
 

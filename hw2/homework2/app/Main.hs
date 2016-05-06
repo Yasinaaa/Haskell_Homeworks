@@ -1,6 +1,6 @@
 module Main where
 
-import Lib
+import HW2
 import Prelude hiding (gcd)
 
 main :: IO ()

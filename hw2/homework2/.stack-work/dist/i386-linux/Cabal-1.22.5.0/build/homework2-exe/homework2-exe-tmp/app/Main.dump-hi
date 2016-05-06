@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2016-04-08 11:15:19.751409 UTC
+2016-04-16 11:08:38.94631 UTC
 
 interface main@main:Main 7103
-  interface hash: 60248fae217b35067b8b6ed2306b79a8
-  ABI hash: 02193e1bd4778307abb567e89096f1e9
-  export-list hash: 48692661a7cf75cab0a55478423361c9
+  interface hash: edd3b8961f6263f152e291c74b9ef732
+  ABI hash: 8f7b98abd69f161530dd1b937259d541
+  export-list hash: 1f196230d46b142ebbd063e2f9b9ee1f
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: e9d307c6b165c80347eea3c9f3ed7461
   sig of: Nothing
@@ -13,9 +13,9 @@ interface main@main:Main 7103
   where
 exports:
   Main.main
-module dependencies:
+module dependencies: HW2
 package dependencies: base-4.8.2.0* ghc-prim-0.4.0.0
-                      homework2-0.1.0.0@homew_Dsxa3cMcnlM9wFO6qD9wN0 integer-gmp-1.0.0.0
+                      integer-gmp-1.0.0.0
 orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
 family instance modules: base-4.8.2.0:Control.Applicative
                          base-4.8.2.0:Data.Either base-4.8.2.0:Data.Monoid
@@ -25,13 +25,19 @@ import  -/  base-4.8.2.0:GHC.Show 81f797f6fb519cae2341362c0c4308de
 import  -/  base-4.8.2.0:Prelude 0f9dd1bcfa413fa55bb6dca444292bf6
 import  -/  base-4.8.2.0:System.IO ddde535dfa6326b813d98489c5399679
 import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
-import  -/  homework2-0.1.0.0@homew_Dsxa3cMcnlM9wFO6qD9wN0:Lib fa23060b07d7f1376eb2c271ffe83021
-881ead57f5799070e2f47a64173ec256
+import  -/  HW2 324a116c4e32359b1b20d4096d2e3936
+  exports: ef27eeab7ce6ed592222bbc08167457a
+  coPrime 30a361a580a4eba1cfe52ddd3b5e4ca9
+  gcd f0f818cae45ced2e9bc16a71fe784a09
+  gcfList 6ed7ee9f0fc0172d7a2660f289bf3cfb
+  list2_1 b5dcdc0b135091c400af362cfd7b7f74
+  perfect 6edf90aaa843489330535b46eda31e35
+644e3ffa06a3619e1d19f901ec1fe155
   main :: GHC.Types.IO ()
   {- Arity: 1, Strictness: <L,U>,
      Unfolding: InlineRule (0, True, True)
                 Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
-5ebd635227c79d216985b990b7ccdbbc
+fff6a780269d06a28756c8e8ddcd6e16
   main1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
@@ -90,14 +96,14 @@ e9c3f0d44b7a703472699e77b755ecbe
 4ce307b2c6271a57021ac619db8e57f9
   main14 :: GHC.Integer.Type.Integer
   {- HasNoCafRefs, Unfolding: (__integer 3) -}
-52f34d306e90718390d5b963c885ddc3
+13c7f5480619225fab88335352b9be49
   main15 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackAppendCString#
                    "coPrime 15 3 answer="#
                    Main.main16) -}
-12a212e9d7880951d79eee33fb4b8a6a
+8eaef9fa2c09194f1c2ce2bc4395ac2b
   main16 :: [GHC.Types.Char]
-  {- Unfolding: (case Lib.coPrime
+  {- Unfolding: (case HW2.coPrime
                         @ GHC.Integer.Type.Integer
                         GHC.Real.$fIntegralInteger
                         Main.main17
@@ -107,21 +113,21 @@ e9c3f0d44b7a703472699e77b755ecbe
 8aea154cda4ec0ec6ab85936dcaa82c9
   main17 :: GHC.Integer.Type.Integer
   {- HasNoCafRefs, Unfolding: (__integer 15) -}
-99d1228282dcb4cb945def581951a81c
+cb1f6ac6dc8d416401dbbcd7a84b2f1e
   main18 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackAppendCString#
                    "coPrime 17 3 answer="#
                    Main.main19) -}
-5be52d75feeda18e55e09b04f5898cc2
+63ca332b7ea28996fce4652985e86354
   main19 :: [GHC.Types.Char]
-  {- Unfolding: (case Lib.coPrime
+  {- Unfolding: (case HW2.coPrime
                         @ GHC.Integer.Type.Integer
                         GHC.Real.$fIntegralInteger
                         Main.main20
                         Main.main14 of wild {
                    GHC.Types.False -> GHC.Show.shows17
                    GHC.Types.True -> GHC.Show.shows16 }) -}
-3cdb0d6242adbc5d21f3019f50dfc24c
+6762ac1c2dc02ee05e795f9dc1f60e84
   main2 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackAppendCString#
                    "perfect 1000 answer="#
@@ -129,21 +135,21 @@ e9c3f0d44b7a703472699e77b755ecbe
 023d2fe8773f961aadb4df9d8c20a2c9
   main20 :: GHC.Integer.Type.Integer
   {- HasNoCafRefs, Unfolding: (__integer 17) -}
-065fac7131a54034098439d72da5daf8
+348aecb9caa5fc246e3dd6b662c636de
   main21 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackAppendCString#
                    "gcd 42 6 answer="#
                    Main.main22) -}
-b6be1b622a0acca2daacd16ed3641dc6
+182bc0ca4864e69b0a1c903697894005
   main22 :: [GHC.Types.Char]
   {- Unfolding: (case GHC.Show.$w$cshowsPrec1
                         0
                         Main.main23
                         (GHC.Types.[] @ GHC.Types.Char) of ww2 { (#,#) ww3 ww4 ->
                  GHC.Types.: @ GHC.Types.Char ww3 ww4 }) -}
-c0f8bdad0350b45f94025f7baf94ccd4
+cf10c92bf97e546fa67860defb01ce5d
   main23 :: GHC.Integer.Type.Integer
-  {- Unfolding: (Lib.gcd
+  {- Unfolding: (HW2.gcd
                    @ GHC.Integer.Type.Integer
                    GHC.Real.$fIntegralInteger
                    Main.main25
@@ -154,21 +160,21 @@ c0f8bdad0350b45f94025f7baf94ccd4
 9a18c63d18a04d391ee82a7ab60fdbcf
   main25 :: GHC.Integer.Type.Integer
   {- HasNoCafRefs, Unfolding: (__integer 42) -}
-06c9fa1709d4eceea2802879fff8be85
+a9ef07e3bb97eaa506617e8967098aef
   main26 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackAppendCString#
                    "list2_1 [[1,2,3], [4,5,5], [-1,6,3,7,8], [26,1,7,3,5]] answer="#
                    Main.main27) -}
-282a5cea4d6be3ae9f5a8b13cda58768
+1fbbb1c54bb0d8210392983012885353
   main27 :: [GHC.Types.Char]
   {- Unfolding: (case GHC.Show.$w$cshowsPrec1
                         0
                         Main.main28
                         (GHC.Types.[] @ GHC.Types.Char) of ww2 { (#,#) ww3 ww4 ->
                  GHC.Types.: @ GHC.Types.Char ww3 ww4 }) -}
-56b81279b39de5d8cf3ccc79b6ba20d2
+a022c67da58bec79857011ac2547f073
   main28 :: GHC.Integer.Type.Integer
-  {- Unfolding: (Lib.list2_1
+  {- Unfolding: (HW2.list2_1
                    @ GHC.Integer.Type.Integer
                    GHC.Real.$fIntegralInteger
                    Main.main29) -}
@@ -179,7 +185,7 @@ c0f8bdad0350b45f94025f7baf94ccd4
                    @ [GHC.Integer.Type.Integer]
                    Main.main50
                    Main.main30) -}
-6d0eb5b49a66b0e3ffd805158d1b9ea8
+1e7d681fe0339623fb64f74658cac11e
   main3 :: GHC.Base.String
   {- Unfolding: (GHC.Show.$fShowInteger_$cshowList
                    Main.main4
@@ -246,9 +252,9 @@ e8ce6018d4932ac0772981ed6db99ea7
 b9523bdd1e01f78620ef5e50731713e3
   main39 :: GHC.Integer.Type.Integer
   {- HasNoCafRefs, Unfolding: (__integer 1) -}
-b391b97c1b25f37e1553c1b3a64a029e
+b3dc2c96219155ce5bf72f53c15da153
   main4 :: [GHC.Integer.Type.Integer]
-  {- Unfolding: (Lib.perfect
+  {- Unfolding: (HW2.perfect
                    @ GHC.Integer.Type.Integer
                    GHC.Real.$fIntegralInteger
                    Main.main5) -}
@@ -337,7 +343,7 @@ ca99bea035bf91fac3579d0ba2cd7c68
 7a9b998af848c7448e471893dd522828
   main53 :: GHC.Integer.Type.Integer
   {- HasNoCafRefs, Unfolding: (__integer 2) -}
-2df3c54431702e653a554aa925d55d75
+d05f8d91e6e47255985b0466a1266508
   main54 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
@@ -345,21 +351,21 @@ ca99bea035bf91fac3579d0ba2cd7c68
      Unfolding: (GHC.TopHandler.runMainIO1
                    @ ()
                    Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R))) -}
-d82dbd3b9b7167bc432e29709fd46c2b
+e256ac11a34ca7cb97773ddd52be657f
   main6 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackAppendCString#
                    "gcfList [3, 5, 4] answer="#
                    Main.main7) -}
-a5f647483d4cc279ff7a53d4bda3c50a
+d4df64cff28c03507cb5e76f084a38e4
   main7 :: [GHC.Types.Char]
   {- Unfolding: (case GHC.Show.$w$cshowsPrec1
                         0
                         Main.main8
                         (GHC.Types.[] @ GHC.Types.Char) of ww2 { (#,#) ww3 ww4 ->
                  GHC.Types.: @ GHC.Types.Char ww3 ww4 }) -}
-2c705f3176d9585d37f67984260265f1
+7b51e9fa165bb42a515cb2b020319365
   main8 :: GHC.Integer.Type.Integer
-  {- Unfolding: (Lib.gcfList
+  {- Unfolding: (HW2.gcfList
                    @ GHC.Integer.Type.Integer
                    GHC.Real.$fIntegralInteger
                    Main.main9) -}

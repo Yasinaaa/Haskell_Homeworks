@@ -9,17 +9,17 @@ main = do
 	putStrLn $ "list2_1 [[1,2,3], [4,5,5], [-1,6,3,7,8], [26,1,7,3,5]] answer=" ++ show res
 
 	let res = gcd 42 6
-	putStrLn $ "" ++ show res
+	putStrLn $ "gcd 42 6 answer=" ++ show res
 
 	let res = coPrime 17 3
-	putStrLn $ "coPrime 17 3" ++ show res
+	putStrLn $ "coPrime 17 3 answer=" ++ show res
 
 	let res = coPrime 15 3
-	putStrLn $ "coPrime 15 3" ++ show res
+	putStrLn $ "coPrime 15 3 answer=" ++ show res
 
 	let res = gcfList [3, 5, 4]
-	putStrLn $ "gcfList [3, 5, 4]" ++ show res
+	putStrLn $ "gcfList [3, 5, 4] answer=" ++ show res
 
 	let res = perfect 1000
-	putStrLn $ "perfect 1000" ++ show res
+	putStrLn $ "perfect 1000 answer=" ++ show res
 
