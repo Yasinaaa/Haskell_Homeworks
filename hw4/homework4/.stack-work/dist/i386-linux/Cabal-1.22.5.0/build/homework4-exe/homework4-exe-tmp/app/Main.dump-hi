@@ -1,0 +1,164 @@
+
+==================== FINAL INTERFACE ====================
+2016-05-13 16:56:17.989727 UTC
+
+interface main@main:Main 7103
+  interface hash: 09c5f4c0a048270aa2b9c07c3471d3f7
+  ABI hash: b1ef6f40c84121d44acc0b75f6ca790f
+  export-list hash: 1f196230d46b142ebbd063e2f9b9ee1f
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 362012a1d33b2c4cd62e28c0fe39235b
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Main.main
+module dependencies: HW4
+package dependencies: base-4.8.2.0* ghc-prim-0.4.0.0
+                      integer-gmp-1.0.0.0
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Monoid
+                         base-4.8.2.0:Data.Type.Equality base-4.8.2.0:GHC.Generics
+import  -/  base-4.8.2.0:GHC.Base bf56e93e483b6a281ad97fedb63bfd04
+import  -/  base-4.8.2.0:GHC.Show 81f797f6fb519cae2341362c0c4308de
+import  -/  base-4.8.2.0:Prelude 0f9dd1bcfa413fa55bb6dca444292bf6
+import  -/  base-4.8.2.0:System.IO ddde535dfa6326b813d98489c5399679
+import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
+import  -/  HW4 7002400e238377819b56de11db91f026
+  exports: f731bc913eb950bf4bd294f7ff766ff0
+  insertValue 3a6f19e1119704eb66cbcba1e57bbc1f
+  slice 5980e97275a240c1c5bcbcee894428b2
+5b20593c9ddab2378dad84ade02adb87
+  main :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
+05cb24ab92e0f1cbb3415ef3405fa898
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        Main.main13
+                        GHC.Types.True
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 GHC.IO.Handle.Text.hPutStr2
+                   GHC.IO.Handle.FD.stdout
+                   Main.main2
+                   GHC.Types.True
+                   ipv }) -}
+4ff1b0914e7427d27ddb796d6c0f9949
+  main10 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 5) -}
+3aeac1a6b62cba417338f5f00f8d64c6
+  main11 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 3) -}
+d38f22fb966f130e7031fd1f9d9faec8
+  main12 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 6) -}
+95ce897768e7ac492f5c4826f1131a2e
+  main13 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "insertValue="#
+                   Main.main14) -}
+02711bf377b20e47983b232a64c74434
+  main14 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   GHC.Show.shows6
+                   Main.main15) -}
+e5c59a18fe41cf8743785263490b87ce
+  main15 :: GHC.Base.String
+  {- Unfolding: (GHC.Show.showLitString Main.main17 Main.main16) -}
+470f0ed4d7613f102bebffaf61aec1c4
+  main16 :: [GHC.Types.Char]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   GHC.Show.shows6
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+73a676acd129ae9398b5ab80cb73f0b4
+  main17 :: [GHC.Types.Char]
+  {- Unfolding: (HW4.$winsertValue
+                   @ GHC.Types.Char
+                   3
+                   Main.main19
+                   Main.main18) -}
+c21da6cbfc9ee199129546cc6819030e
+  main18 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCStringUtf8#
+                   "Hello Mum, erm... can I borrow \\194\\16320000 please?"#) -}
+431d11eb8124fb82c358b3b30a344b97
+  main19 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# '|') -}
+18f8f19ab0da28f23105b05f7977fc7c
+  main2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackAppendCString#
+                   "slice="#
+                   Main.main3) -}
+8dccfa3eeabaa4a9cc49e37c9d0fbcb7
+  main20 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1
+                   @ ()
+                   Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R))) -}
+9d697c0e5d9c81e1ec2263d33d2ce5f2
+  main3 :: GHC.Base.String
+  {- Unfolding: (GHC.Show.$fShowInteger_$cshowList
+                   Main.main4
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+28e42a4b3d86f838c3ebc56a58cd1e3d
+  main4 :: [GHC.Integer.Type.Integer]
+  {- Unfolding: (HW4.$wslice
+                   @ GHC.Integer.Type.Integer
+                   Main.main5
+                   1
+                   3) -}
+479997379057f15a3e2be14472fd5f35
+  main5 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Main.main11
+                   Main.main6) -}
+344766fca0e8cc9f5bf124e679837e96
+  main6 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Main.main10
+                   Main.main7) -}
+49dc56b75284caaedba08a263259654d
+  main7 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Main.main12
+                   Main.main8) -}
+0ff489d3da13b87e868a8bb50f80be0f
+  main8 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Main.main11
+                   Main.main9) -}
+709c1d5164d07f326823cdae91a69e16
+  main9 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Main.main10
+                   (GHC.Types.[] @ GHC.Integer.Type.Integer)) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
