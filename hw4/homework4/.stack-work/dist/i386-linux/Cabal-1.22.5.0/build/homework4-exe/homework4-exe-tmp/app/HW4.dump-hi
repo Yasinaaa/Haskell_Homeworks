@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2016-05-13 16:56:17.865431 UTC
+2016-05-22 09:52:54.398184 UTC
 
 interface main@main:HW4 7103
-  interface hash: c332140031f6d3dfbb8449108369fd0d
-  ABI hash: 7002400e238377819b56de11db91f026
+  interface hash: 8f01464d1001f5961cbbed90b8303337
+  ABI hash: a9ad154c83e7a5f1abde0bb4e502c4ad
   export-list hash: f731bc913eb950bf4bd294f7ff766ff0
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: f08236f1368423c3b6414cffd810e26e
@@ -28,11 +28,11 @@ import  -/  base-4.8.2.0:GHC.List ab53ad3f819f64915f1f91641b6e3255
 import  -/  base-4.8.2.0:GHC.Num 099c29dfc2c0e3c154d011e91b663293
 import  -/  base-4.8.2.0:Prelude 0f9dd1bcfa413fa55bb6dca444292bf6
 import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
-e137db16de5b161b1cd64083ae5b6e09
-  $winsertValue :: GHC.Prim.Int# -> a -> [a] -> [a]
-  {- Arity: 3, HasNoCafRefs, Strictness: <S,U><L,U><L,1*U>,
+00851d156996981942967ceb10f32467
+  $winsertValue :: a -> [a] -> GHC.Prim.Int# -> [a]
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U><L,1*U><S,U>,
      Inline: [0],
-     Unfolding: (\ @ a ww :: GHC.Prim.Int# w :: a w1 :: [a] ->
+     Unfolding: (\ @ a w :: a w1 :: [a] ww :: GHC.Prim.Int# ->
                  letrec {
                    $wcountdown :: GHC.Prim.Int# -> [a] -> [a]
                      {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [0] -}
@@ -73,14 +73,14 @@ a67f3cdb6d0c52df2f23671669874aed
      Inline: [0] -}
 7a55973e6a4181f841c014d00224708e
   type Graph = [(GHC.Types.Int, [GHC.Types.Int])]
-3a6f19e1119704eb66cbcba1e57bbc1f
-  insertValue :: GHC.Types.Int -> a -> [a] -> [a]
-  {- Arity: 3, HasNoCafRefs, Strictness: <S(S),U(U)><L,U><L,1*U>,
+426a63b9806fbcefe0852dd598815dd0
+  insertValue :: a -> [a] -> GHC.Types.Int -> [a]
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U><L,1*U><S(S),U(U)>,
      Inline: INLINE[0],
      Unfolding: InlineRule (3, True, False)
-                (\ @ a w :: GHC.Types.Int w1 :: a w2 :: [a] ->
-                 case w of ww { GHC.Types.I# ww1 ->
-                 HW4.$winsertValue @ a ww1 w1 w2 }) -}
+                (\ @ a w :: a w1 :: [a] w2 :: GHC.Types.Int ->
+                 case w2 of ww { GHC.Types.I# ww1 ->
+                 HW4.$winsertValue @ a w w1 ww1 }) -}
 6d0868b057a37972e041d8c8d915d7f2
   isEulerPathExist :: HW4.Graph -> GHC.Types.Bool
   {- Strictness: b -}

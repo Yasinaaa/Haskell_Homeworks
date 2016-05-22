@@ -4,9 +4,9 @@ module HW4 where
 -- позицию. 
 import Prelude
 
-insertValue :: Int -> a -> [a] -> [a]
-insertValue n y xs = countdown n xs where
-   countdown 0 xs = y:countdown n xs -- reset to original n
+insertValue :: a -> [a] -> Int -> [a]
+insertValue y xs n = countdown n xs where
+   countdown 0 xs = y:countdown n xs 
    countdown _ [] = []
    countdown m (x:xs) = x:countdown (m-1) xs
 

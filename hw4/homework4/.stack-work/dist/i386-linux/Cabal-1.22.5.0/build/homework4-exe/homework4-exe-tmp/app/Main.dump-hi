@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2016-05-13 16:56:17.989727 UTC
+2016-05-22 09:52:55.407866 UTC
 
 interface main@main:Main 7103
-  interface hash: 09c5f4c0a048270aa2b9c07c3471d3f7
-  ABI hash: b1ef6f40c84121d44acc0b75f6ca790f
+  interface hash: eaf674d1f1b419244f767ea96508e3fe
+  ABI hash: 6a22d25561fa49850164369f3cdabafc
   export-list hash: 1f196230d46b142ebbd063e2f9b9ee1f
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 362012a1d33b2c4cd62e28c0fe39235b
@@ -25,16 +25,16 @@ import  -/  base-4.8.2.0:GHC.Show 81f797f6fb519cae2341362c0c4308de
 import  -/  base-4.8.2.0:Prelude 0f9dd1bcfa413fa55bb6dca444292bf6
 import  -/  base-4.8.2.0:System.IO ddde535dfa6326b813d98489c5399679
 import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
-import  -/  HW4 7002400e238377819b56de11db91f026
+import  -/  HW4 a9ad154c83e7a5f1abde0bb4e502c4ad
   exports: f731bc913eb950bf4bd294f7ff766ff0
-  insertValue 3a6f19e1119704eb66cbcba1e57bbc1f
+  insertValue 426a63b9806fbcefe0852dd598815dd0
   slice 5980e97275a240c1c5bcbcee894428b2
-5b20593c9ddab2378dad84ade02adb87
+c81ae10fbd6ec1cc9ecf1a70ec868478
   main :: GHC.Types.IO ()
   {- Arity: 1, Strictness: <L,U>,
      Unfolding: InlineRule (0, True, True)
                 Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
-05cb24ab92e0f1cbb3415ef3405fa898
+6f59c5f39c3c86485e2fcf0cc4dc3a4c
   main1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
@@ -59,18 +59,18 @@ import  -/  HW4 7002400e238377819b56de11db91f026
 d38f22fb966f130e7031fd1f9d9faec8
   main12 :: GHC.Integer.Type.Integer
   {- HasNoCafRefs, Unfolding: (__integer 6) -}
-95ce897768e7ac492f5c4826f1131a2e
+4528788b49975991b17312b1d4910df6
   main13 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackAppendCString#
                    "insertValue="#
                    Main.main14) -}
-02711bf377b20e47983b232a64c74434
+29e416608084d345dd16500828fdf6c9
   main14 :: [GHC.Types.Char]
   {- Unfolding: (GHC.Types.:
                    @ GHC.Types.Char
                    GHC.Show.shows6
                    Main.main15) -}
-e5c59a18fe41cf8743785263490b87ce
+4db44326c9363f448f49237cd60c30ad
   main15 :: GHC.Base.String
   {- Unfolding: (GHC.Show.showLitString Main.main17 Main.main16) -}
 470f0ed4d7613f102bebffaf61aec1c4
@@ -80,13 +80,13 @@ e5c59a18fe41cf8743785263490b87ce
                    @ GHC.Types.Char
                    GHC.Show.shows6
                    (GHC.Types.[] @ GHC.Types.Char)) -}
-73a676acd129ae9398b5ab80cb73f0b4
+393176ce46e7536b448722f3f4e54153
   main17 :: [GHC.Types.Char]
   {- Unfolding: (HW4.$winsertValue
                    @ GHC.Types.Char
-                   3
                    Main.main19
-                   Main.main18) -}
+                   Main.main18
+                   3) -}
 c21da6cbfc9ee199129546cc6819030e
   main18 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCStringUtf8#
@@ -99,7 +99,7 @@ c21da6cbfc9ee199129546cc6819030e
   {- Unfolding: (GHC.CString.unpackAppendCString#
                    "slice="#
                    Main.main3) -}
-8dccfa3eeabaa4a9cc49e37c9d0fbcb7
+48e042fd2682b181a9dfdef078fd0d25
   main20 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
